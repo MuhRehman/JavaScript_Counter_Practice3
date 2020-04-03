@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+   <style>
+     input {
+    background-color: transparent;
+    border: 0px solid;
+    height: 420px;
+    width: 200px;
+    color: #CCC;
+    font-weight: 400;
+    font-size: 222px;
+}
+   </style>
+    <script>
+    var i = 0;
+    function IncreaseNum() {
+      var inputVal = document.getElementById("number").value;
+            --inputVal;
+            document.getElementById("number").value = inputVal;
+            
+            
+    }  
+      let x = 0;
+       function DecreaseNum() {
+        var inputValue = document.getElementById("number").value;
+
+        inputValue++;
+      
+         document.getElementById("number").value = inputValue;
+       }
+     </script>
+</head>
+<body>
+    <header id="header1" class=" bg-primary p-5 text-center"><h1 id="title">JavaScript</h1></header>
+    <div class="container">
+    <div class="card mt-5 mb-3 p-3">
+      <div class="row">
+        <div class="col-md-4 text-center">
+          <button type="button" onclick="IncreaseNum();" class="btn btn-primary text-center">Decrease</button>
+        </div>
+        <div class="col-md-4 text-center" >
+          <input type="text" class="myInput" id="number" value="0">
+        </div>
+        <div class="col-md-4 text-center  ">
+          <button type="button" onclick="DecreaseNum();" id="btnDecrease" class="btn btn-danger text-center">Increase</button>
+      </div>
+    </div>
+
+    </div>
+    </div>
+
+    
+
+</body>
+
+
+</html>
